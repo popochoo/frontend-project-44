@@ -3,3 +3,6 @@
 
 ### Brain Even:
 https://asciinema.org/a/sZWoRcHveqxWvdO9QqOuh5MMA
+
+### Brain Calc:
+https://asciinema.org/a/chnMJ5aqF2O3HmHmFwbALlDIl
