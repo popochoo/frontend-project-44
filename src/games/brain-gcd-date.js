@@ -25,6 +25,3 @@ const dataPreparationBrainGcd = () => {
 
     baseLogic(rules, randomQuestion, correctAnswer);
 };
-
-
-dataPreparationBrainGcd();
