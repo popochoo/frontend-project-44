@@ -4,11 +4,11 @@ const baseLogic = (rules, randomQuestion, correctAnswer) => {
     console.log('Welcome to the Brain Games!');
     const username = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${username}!`);
+    console.log(rules);
 
     let roundCount = 0;
 
     while (roundCount < 3) {
-        console.log(rules);
         
         const question = randomQuestion();
         const answer = correctAnswer(question);
