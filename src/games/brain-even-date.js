@@ -10,7 +10,7 @@ const dataPreparationBrainEven = () => {
     };
 
     const randomQuestion = () => {
-        return Math.round(Math.random() * 101)
+        return Math.round(Math.random() * 101);
     };
 
     const rules = 'Answer "yes" if the number is even, otherwise answer "no".';

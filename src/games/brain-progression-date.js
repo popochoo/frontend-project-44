@@ -21,7 +21,7 @@ const dataPreparationBrainProgression = () => {
         const lengthProgression = Math.floor(Math.random() * 10) + 10;
         let seedNumber = Math.floor(Math.random() * 20) + 1;
         const fixedIncrease = Math.floor(Math.random() * 20) + 2;
-        const numberToReplace = Math.floor(Math.random() * 10) + 1
+        const numberToReplace = Math.floor(Math.random() * 10) + 1;
 
         const listProgression = [];
         listProgression.push(seedNumber.toString());

@@ -18,7 +18,7 @@ const dataPreparationBrainGcd = () => {
     };
 
     const randomQuestion = () => {
-        return `${Math.round(Math.random() * 101)} ${Math.round(Math.random() * 101)}`
+        return `${Math.round(Math.random() * 101)} ${Math.round(Math.random() * 101)}`;
     }
 
     const rules = 'Find the greatest common divisor of given numbers.';

@@ -13,7 +13,7 @@ const baseLogic = (rules, randomQuestion, correctAnswer) => {
         const question = randomQuestion();
         const answer = correctAnswer(question);
         
-        console.log(`Question: ${question}`)
+        console.log(`Question: ${question}`);
 
         const answerOfUser = readlineSync.question('Your answer: ');
 
