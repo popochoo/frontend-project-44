@@ -18,3 +18,5 @@ const dataPreparationBrainPrime = () => {
 
     baseLogic(rules, randomQuestion, correctAnswer);
 };
+
+export default dataPreparationBrainPrime;
