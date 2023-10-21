@@ -1,28 +1,30 @@
-import baseLogic from "../index.js";
+import baseLogic from '../index.js';
 
 const dataPreparationBrainCalc = () => {
-    const correctAnswer = (expression) => {
-        const elements = expression.split(' ');
+  const correctAnswer = (expression) => {
+    const elements = expression.split(' ');
+    let correctNumber = 0;
 
-        switch (elements[1]) {
-            case '+':
-                return (Number(elements[0]) + Number(elements[2])).toString();
-            case '-':
-                return (Number(elements[0]) - Number(elements[2])).toString();
-            case '*':
-                return (Number(elements[0]) * Number(elements[2])).toString();        
-        };
-    };
+    if (elements[1] === '+') {
+      correctNumber = (Number(elements[0]) + Number(elements[2])).toString();
+    } if (elements[1] === '-') {
+      correctNumber = (Number(elements[0]) - Number(elements[2])).toString();
+    } if (elements[1] === '*') {
+      correctNumber = (Number(elements[0]) * Number(elements[2])).toString();
+    }
 
-    const randomQuestion = () => {
-        const operator = ['+', '-', '*'];
-    
-        return `${Math.round(Math.random() * 101)} ${operator[Math.floor(Math.random()*operator.length)]} ${Math.round(Math.random() * 101)}`;
-    };
+    return correctNumber;
+  };
 
-    const rules = 'What is the result of the expression?';
+  const randomQuestion = () => {
+    const operator = ['+', '-', '*'];
 
-    baseLogic(rules, randomQuestion, correctAnswer);
+    return `${Math.round(Math.random() * 101)} ${operator[Math.floor(Math.random() * operator.length)]} ${Math.round(Math.random() * 101)}`;
+  };
+
+  const rules = 'What is the result of the expression?';
+
+  baseLogic(rules, randomQuestion, correctAnswer);
 };
 
 export default dataPreparationBrainCalc;

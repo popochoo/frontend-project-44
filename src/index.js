@@ -1,35 +1,34 @@
 import readlineSync from 'readline-sync';
 
 const baseLogic = (rules, randomQuestion, correctAnswer) => {
-    console.log('Welcome to the Brain Games!');
-    const username = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${username}!`);
-    console.log(rules);
+  console.log('Welcome to the Brain Games!');
+  const username = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${username}!`);
+  console.log(rules);
 
-    let roundCount = 0;
+  let roundCount = 0;
 
-    while (roundCount < 3) {
-        
-        const question = randomQuestion();
-        const answer = correctAnswer(question);
-        
-        console.log(`Question: ${question}`);
+  while (roundCount < 3) {
+    const question = randomQuestion();
+    const answer = correctAnswer(question);
 
-        const answerOfUser = readlineSync.question('Your answer: ');
+    console.log(`Question: ${question}`);
 
-        if (answerOfUser === answer) {
-            console.log('Correct!');
-            roundCount += 1;
-        } else {
-            console.log(`'${answerOfUser}' is wrong answer ;(. Correct answer was '${answer}'.`);
-            console.log(`Let's try again, ${username}!`);
-            break;
-        };
-    };
+    const answerOfUser = readlineSync.question('Your answer: ');
 
-    if (roundCount === 3) {
-        console.log(`Congratulations, ${username}!`);
-    };
+    if (answerOfUser === answer) {
+      console.log('Correct!');
+      roundCount += 1;
+    } else {
+      console.log(`'${answerOfUser}' is wrong answer ;(. Correct answer was '${answer}'.`);
+      console.log(`Let's try again, ${username}!`);
+      break;
+    }
+  }
+
+  if (roundCount === 3) {
+    console.log(`Congratulations, ${username}!`);
+  }
 };
 
 export default baseLogic;
