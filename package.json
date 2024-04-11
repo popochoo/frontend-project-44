@@ -2,7 +2,6 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/popochok/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/popochok/frontend-project-44/actions)",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +14,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "author": "",
+  "author": "Timur Alekseev",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
