@@ -20,9 +20,8 @@ jobs:
 
       - name: Hexlet project check
         uses: hexlet/project-action@release
-        evn:
-            cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
+          cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
           coverageCommand: yarn coverage
           
